@@ -1,7 +1,7 @@
 import pprint
 
 
-def load_and_process_data(filename):
+def load_data(filename):
     with open(filename, encoding="utf-8") as f:
         lines = f.readlines()
 
@@ -15,7 +15,7 @@ def load_and_process_data(filename):
     return data
 
 
-def choose_and_sort(data):
+def choose(data):
     options = {
         "1": "title",
         "2": "color",
@@ -40,8 +40,8 @@ def choose_and_sort(data):
 
 def main():
     filename = "sneakers.csv"
-    data = load_and_process_data(filename)
-    sorted_data = choose_and_sort(data)
+    data = load_data(filename)
+    sorted_data = choose(data)
 
     pprint.pprint(sorted_data)
 
