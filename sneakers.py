@@ -2,7 +2,6 @@ import pprint
 
 
 def load_and_process_data(filename):
-    """Reads the CSV file and processes its data into a list of dictionaries."""
     with open(filename, encoding="utf-8") as f:
         lines = f.readlines()
 
