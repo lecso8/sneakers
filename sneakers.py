@@ -42,7 +42,6 @@ def main():
     filename = "sneakers.csv"
     data = load_data(filename)
     sorted_data = choose(data)
-
     pprint.pprint(sorted_data)
 
 
